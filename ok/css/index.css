@@ -28,8 +28,8 @@ body {
     font-family: 'Liberation Sans', sans-serif;
 }
 img.bg {
-    opacity: 0.4;
-    filter: alpha(opacity=40);
+    opacity: 0.3;
+    filter: alpha(opacity=30);
     min-height: 100%;
     min-width: 1024px;
     width: 100%;
@@ -65,7 +65,7 @@ h2 {
     text-align: center;
     color: #000;
     font-weight: 100; 
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
 }
 h3 {
     font-size: 1.3em;
@@ -92,10 +92,11 @@ h3 {
     margin: 0 auto;
 }
 .login-form {
+    display: block;
     width: 38%;
     float:left;
     /*background: #222430;*/
-    padding: 2.5em;
+    padding: 0 2.5em 0 2.5em;
     background-size: cover;
     -webkit-box-shadow: -6px 6px 3px 0px rgb(28, 43, 61);
     -moz-box-shadow: -6px 6px 3px 0px rgb(28, 43, 61);
@@ -107,6 +108,86 @@ h3 {
 .login-form.agileits-right { 
     float: right;
 }
+.login-fb {
+    background-color: #3B5998;
+    border: 1px solid #3B5998;
+    margin-bottom: 0.4em;
+}
+.logo-fb {
+    width: 38.5px;
+    height: auto;
+}
+.login-gp {
+    background-color: #DF4B38;
+    border: 1px solid #DF4B38;
+}
+.logo-gp {
+    width: 38.5px;
+    height: auto;
+}
+.logo-fb, .logo-gp {
+    display: block;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+.login-fb, .login-gp {
+    width: 100%;
+    display: inline-block;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+    padding: 0 1em 0 1em;
+    border-radius: 10px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+.login-fb:hover {
+    /*background: #6B7A9A;*/
+}
+.login-gp:hover {
+    /*background: #D0867B;*/
+}
+.login-fb:hover, .login-gp:hover {
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s all ;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+.divider-title {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 0 20px;
+    text-transform: uppercase;
+}
+.divider {
+    overflow: hidden;
+    text-align: center;
+}
+.divider:before,
+.divider:after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+.divider:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+.divider:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
 .input-row {
     padding: 1em 1.5em;
     border: 1px solid #c7c7c7;
@@ -117,6 +198,7 @@ h3 {
     border-radius: 15px;
 }
 .login-form input[type="text"], .login-form input[type="password"] {
+    z-index: 0;
     outline: none;
     font-size: 1em;
     color: #000;
@@ -132,7 +214,15 @@ h3 {
     -o-border-radius: 10px;
     -ms-border-radius: 10px;
     border-radius: 10px;
-} 
+}
+.login-form input[type="text"]:focus, .login-form input[type="password"]:focus {
+    border: 2px solid #8BADE4;
+    transition: 0.3s all ;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -o-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+}
 .login-form p {
     font-size: 1em;
     color: #000;
@@ -213,11 +303,11 @@ input.checkbox:checked:after {
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     border-radius: 10px; 
-    margin-top: 4em; 
+    margin-top: 1em; 
 }
 .login-form input[type="submit"]:hover {
-    background: transparent;
-    color: #00C23D;  
+    background: #1ED760;
+    color: #fff;  
     transition: 0.5s all ;
     -webkit-transition: 0.5s all;
     -moz-transition: 0.5s all;
@@ -225,7 +315,7 @@ input.checkbox:checked:after {
     -ms-transition: 0.5s all;
 } 
 .login-agileits-bottom {
-    margin-top: 3.9em;
+    margin-top: 1em;
     text-align: center; 
 }
 .login-agileits-bottom  h6 { 

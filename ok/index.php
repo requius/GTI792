@@ -21,16 +21,22 @@
             <div class="login-form login-form-left"> 
                 <div class="agile-row">
                     <div class="login-agileits-top">
+                        <a class="login-fb"><img src="images/logo-fb.png" class="logo-fb">login with facebook</a>
+                        <br/>
+                        <a class="login-gp"><img src="images/logo-gp.png" class="logo-gp">login with google+</a>
+                        <br/><br/>
+                        <div class="divider">
+                            <strong class="divider-title">or</strong>
+                        </div>
+                        <br/>
                         <form action="#" method="post"> 
-                            <p>User Name </p>
-                            <input type="text" class="name" name="user name" required=""/>
-                            <p>Password</p>
-                            <input type="password" class="password" name="Password" required=""/>  
+                            <input type="text" class="username" name="username" placeholder="Username" required=""/><br/>
+                            <input type="password" class="password" name="password" placeholder="Password" required=""/>  
                             <label class="anim">
                                 <input type="checkbox" class="checkbox">
                                 <span> Remember me ?</span> 
                             </label>   
-                            <input type="submit" value="Sign In"> 
+                            <input type="submit" value="LOGIN"> 
                         </form> 	
                     </div> 
                     <div class="login-agileits-bottom"> 
@@ -43,17 +49,14 @@
                 <div class="agile-row">
                     <div class="login-agileits-top"> 	
                         <form action="#" method="post"> 
-                            <p>User Name </p>
-                            <input type="text" class="name" name="user name" required=""/>
-                            <p>Email</p>
-                            <input type="text" class="email" name="email" required=""/>
-                            <p>Password</p>
-                            <input type="password" class="password" name="password" required=""/>  
+                            <input type="text" class="email" name="email" placeholder="Email" required=""/><br/>
+                            <input type="text" class="username" name="username" placeholder="Username" required=""/><br/>
+                            <input type="password" class="password" name="password" placeholder="Password" required=""/>
                             <label class="anim">
                                 <input type="checkbox" class="checkbox">
                                 <span> Remember me ?</span> 
                             </label>   
-                            <input type="submit" value="Sign Up">
+                            <input type="submit" value="CREATE ACCOUNT">
                         </form> 	
                     </div>  
                 </div>  

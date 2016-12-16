@@ -17,6 +17,7 @@
     <div class="test">
 With CSS3, websites can finally use fonts other than the pre-selected "web-safe" fonts.
 </div>
+    <input name="searchbox" onfocus="if (this.value=='search') this.value = ''" onblur="if (this.value == '') this.value = 'search'" type="text" value="search">
     
 </body>
 </html>
