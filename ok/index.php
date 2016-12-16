@@ -21,10 +21,10 @@
             <div class="login-form login-form-left"> 
                 <div class="agile-row">
                     <div class="login-agileits-top">
-                        <a class="login-fb"><img src="images/logo-fb.png" class="logo-fb">login with facebook</a>
+                        <div><img src="images/logo-fb.png" class="logo-fb"><a class="login-fb">login with facebook</a></div>
                         <br/>
-                        <a class="login-gp"><img src="images/logo-gp.png" class="logo-gp">login with google+</a>
-                        <br/><br/>
+                        <div><img src="images/logo-gp.png" class="logo-gp"><a class="login-gp">login with google+</a></div>
+                        <br/>
                         <div class="divider">
                             <strong class="divider-title">or</strong>
                         </div>
