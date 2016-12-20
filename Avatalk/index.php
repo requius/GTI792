@@ -24,8 +24,10 @@
                     <div class="login-agileits-top">
                         <div><a class="login-fb"><img src="images/logo-fb.png" class="logo-fb">login with facebook</a></div>
                         <br/>
-                        <div><a class="login-gp"><img src="images/logo-gp.png" class="logo-gp">login with google+</a></div>
-                        <br/>
+                        <!--<div><a class="login-gp"><img src="images/logo-gp.png" class="logo-gp">login with google+</a></div>-->
+                        <div><a><span class="icon-gp-test">login with google+</span></a></div>
+                        <!--<a class="icon-social-login icon-gp">login with google+</a>-->
+                        <br/><br/>
                         <div class="divider">
                             <strong class="divider-title">or</strong>
                         </div>
