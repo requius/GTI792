@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Avatalk</title>
+    <link rel="shotcut icon" type="image/x-icon" href="images/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="Avatalk, Chat with strangers" />
@@ -21,9 +22,9 @@
             <div class="login-form login-form-left"> 
                 <div class="agile-row">
                     <div class="login-agileits-top">
-                        <div><img src="images/logo-fb.png" class="logo-fb"><a class="login-fb">login with facebook</a></div>
+                        <div><a class="login-fb"><img src="images/logo-fb.png" class="logo-fb">login with facebook</a></div>
                         <br/>
-                        <div><img src="images/logo-gp.png" class="logo-gp"><a class="login-gp">login with google+</a></div>
+                        <div><a class="login-gp"><img src="images/logo-gp.png" class="logo-gp">login with google+</a></div>
                         <br/>
                         <div class="divider">
                             <strong class="divider-title">or</strong>
