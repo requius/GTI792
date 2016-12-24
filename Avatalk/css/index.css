@@ -38,12 +38,18 @@ img.bg {
     top: 0;
     left: 0;
 }
+.title{
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+    cursor: default;
+}
 @font-face {
     font-family: solid3DFont;
     src: url(../fonts/solid_3d.ttf);
 }
 .logo {
-    width: 77px;
+    width: auto;
     height: auto;
     display:inline-block;
     vertical-align:middle;
@@ -88,7 +94,7 @@ h3 {
     position: relative;
 }
 .main-w3lsrow {
-    width: 51%;
+    width: 40%;
     margin: 0 auto;
 }
 .login-form {
@@ -165,15 +171,28 @@ h3 {
     border: 1px solid #DF4B38;
     border-radius: 10px;   
 }
+.icon-fb-test {
+    background-image: url(../images/logo-fb.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-color: #3B5998;
+    color: #fff;
+    padding: 12px 20px 12px 48px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
 .icon-gp-test {
     background-image: url(../images/logo-gp.png);
     background-position: left center;
     background-repeat: no-repeat;
     background-color: #DF4B38;
-    padding-left: 48px;
-    color: #fff
+    color: #fff;
+    padding: 12px 20px 12px 48px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
 }
-
 .divider-title {
     font-size: 16px;
     font-weight: bold;
@@ -254,6 +273,33 @@ h3 {
     font-weight: 600; 
     display: inline-block;
 }
+.remember {
+    font-size: 0.9em;
+    color: #000;
+    cursor: pointer;
+    position: relative;
+    margin: 2em 0 0;
+    font-weight: 600; 
+    display: inline-block;
+}
+.policy {
+    margin: 2em 0 2em 0;
+    font-size: small;
+    position: relative;
+    font-weight: 600;
+    display: inline-block;
+}
+.term {
+    color: royalblue;
+    transition: 0.5s all ;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+.term:hover {
+    color: blue;
+}
 input.checkbox {
     background: #222430;
     cursor: pointer;
@@ -299,6 +345,9 @@ input.checkbox:checked:after {
     }
 } 
 .login-form.login-form-left .anim {
+    margin-top: 2.5em;
+}
+.login-form.login-form-left .policy {
     margin-top: 2.5em;
 }
 /*-- //checkbox --*/
@@ -370,7 +419,7 @@ input.checkbox:checked:after {
 .copyright p a:hover{
     color: #222430;	
 }
-/*-- //copyright --*/
+
 /*-- responsive-design --*/
 /*
 @media(min-width: 3888px), (min-height: 1938px){
@@ -402,7 +451,7 @@ h1 {
     /*font-size: 8em; */
 }
 .login-form { 
-    padding: 2em; 
+    padding: 0 2em 0 2em; 
 }
 .main-w3lsrow {
     width: 70%;
@@ -414,13 +463,16 @@ h1 {
     margin: 1.5em 0 0; 
 }
 .login-form.login-form-left .anim {
-    margin-top: 2em;
+    margin-top: 2.5em;
+}
+.login-form.login-form-left .policy {
+    margin-top: 2.5em;
 }
 .login-form input[type="submit"] { 
-    margin-top: 3em;
+    margin-top: 1em;
 }
 .login-agileits-bottom {
-    margin-top: 3.6em; 
+    margin-top: 1em; 
 }
 .login-form h2, .login-form h3 {
     font-size: 1.8em; 
@@ -455,10 +507,10 @@ h1 {
     margin: 1.5em auto 0;
 }
 .login-agileits-bottom {
-    margin-top: 2em;
+    margin-top: 0.8em;
 }
 .login-form input[type="submit"] {
-    margin-top: 2em;
+    margin-top: 0.8em;
 }
 } 
 @media(max-width:490px){
@@ -492,7 +544,7 @@ h1 {
 }
 .login-form, .login-form.agileits-right {
     width: 72%;
-    padding: 1.5em;
+    padding: 0 1.5em 0 1.5em;
 }
 .login-form h2, .login-form h3 {
     font-size: 1.4em;
@@ -503,14 +555,17 @@ h1 {
 .login-form.login-form-left .anim {
     margin-top: 1.5em;
 }
+.login-form.login-form-left .policy {
+    margin-top: 1.5em;
+}
 .login-form input[type="submit"] {
-    font-size: 0.9em;
+    font-size: 0.6em;
 }
 .login-agileits-bottom h6 {
     font-size: 0.9em; 
 }
 .login-agileits-bottom {
-    margin-top: 1.5em;
+    margin-top: 1.0em;
 }
 .copyright {
     margin: 2em 0 1em; 
