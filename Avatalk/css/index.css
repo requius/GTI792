@@ -94,17 +94,18 @@ h3 {
     position: relative;
 }
 .main-w3lsrow {
-    width: 40%;
+    width: 768px;
     margin: 0 auto;
 }
 .login-form {
     display: block;
-    width: 38%;
+    width: 49%;
     float:left;
     /*background: #222430;*/
     padding: 0 2.2em 0 2.2em;
     background-size: cover;
     text-align: left; 
+    height: 387px;
 }
 .login-form.login-form-left { 
     border-right: 1px solid #000;
@@ -113,85 +114,8 @@ h3 {
     float: right;
     border-left: 1px solid #000;
 }
-.login-fb {
-    background-color: #3B5998;
-    border: 1px solid #3B5998;
-}
-.logo-fb {
-    width: auto;
-    height: 40px;
-}
-.login-gp {
-    background-color: #DF4B38;
-    border: 1px solid #DF4B38;
-}
-.logo-gp {
-    width: auto;
-    height: 40px;
-}
-.logo-fb, .logo-gp {
-    display: block;
-    float: left;
-    margin-left: auto;
-    margin-right: auto;
-}
-.login-fb, .login-gp {
-    width: 84%;
-    display: inline-block;
-    color: #fff;
-    font-size: 1em;
-    font-weight: 500;
-    padding: 0.6em 1em;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    text-transform: uppercase;
-    box-sizing: border-box;
-
-}
-.login-fb:hover, .login-gp:hover {
-    opacity: 0.6;
-    filter: alpha(opacity=60);
-    color: #fff;
-    cursor: pointer;
-    transition: 0.5s all ;
-    -webkit-transition: 0.5s all;
-    -moz-transition: 0.5s all;
-    -o-transition: 0.5s all;
-    -ms-transition: 0.5s all;
-}
-.icon-gp {
-    width: 100%;
-    background-image: url(../images/logo-gp.png);
-    background-position: left center;
-    background-repeat: no-repeat;
-    padding-left: 48px;
-    color: #fff;
-    background-color: #DF4B38;
-    padding: 0.6em 1em 0.6em 0;
-    border: 1px solid #DF4B38;
-    border-radius: 10px;   
-}
-.icon-fb-test {
-    background-image: url(../images/logo-fb.png);
-    background-position: left center;
-    background-repeat: no-repeat;
-    background-color: #3B5998;
-    color: #fff;
-    padding: 12px 20px 12px 48px;
-    border-radius: 10px;
-    text-transform: uppercase;
-    font-weight: 600;
-}
-.icon-gp-test {
-    background-image: url(../images/logo-gp.png);
-    background-position: left center;
-    background-repeat: no-repeat;
-    background-color: #DF4B38;
-    color: #fff;
-    padding: 12px 20px 12px 48px;
-    border-radius: 10px;
-    text-transform: uppercase;
-    font-weight: 600;
+.btn-facebook, .btn-google {
+    font-weight: bold;
 }
 .divider-title {
     font-size: 16px;
@@ -231,14 +155,16 @@ h3 {
     -ms-border-radius: 15px;
     border-radius: 15px;
 }
-.login-form input[type="text"], .login-form input[type="password"] {
+.login-form input[type="text"], 
+.login-form input[type="password"],
+.login-form input[type="email"]{
     z-index: 0;
     outline: none;
     font-size: 1em;
     color: #000;
     padding: .6em;
     margin: 0;
-    width: 93%;
+    width: 100%;
     border: 2px solid black;
     -webkit-appearance: none;
     display: block;
@@ -301,49 +227,10 @@ h3 {
     color: blue;
 }
 input.checkbox {
-    background: #222430;
+    display: initial;
     cursor: pointer;
-    vertical-align: middle;
+    vertical-align: sub;
 }
-input.checkbox:before {
-    content: "";
-    position: absolute;
-    width: 1em;
-    height: 1em;
-    background: inherit; 
-}
-input.checkbox:after {
-    content: ""; 
-    position: absolute;
-    top: 0px;
-    left: 0;
-    z-index: 1;
-    width: 1em;
-    height: 1em;
-    border: 1px solid #F44336; 
-    -webkit-transition: .4s all;
-    -moz-transition: .4s all;
-    -o-transition: .4s all;
-    -ms-transition: .4s all;
-    transition: .4s all;
-}
-input.checkbox:checked:after {
-    transform: rotate(-45deg);
-    height: .5rem;
-    border-color: #F44336;
-    border-top-color: transparent;
-    border-right-color: transparent;
-}
- 
-@keyframes rippling {
-    50% {
-            border-left-color: #F44336;
-    }
-    100% {
-            border-bottom-color: #F44336;
-            border-left-color: #F44336;
-    }
-} 
 .login-form.login-form-left .anim {
     margin-top: 2.5em;
 }
@@ -420,158 +307,9 @@ input.checkbox:checked:after {
     color: #222430;	
 }
 
-/*-- responsive-design --*/
-/*
-@media(min-width: 3888px), (min-height: 1938px){
-    body { background-size: auto; }
-}*/
 @media screen and (max-width: 1024px) {
     img.bg {
         left: 50%;
         margin-left: -512px;
     }
 }
-@media(max-width:1440px){
-.main-w3lsrow {
-    width: 57%; 
-} 
-}
-@media(max-width:1366px){
-.main-w3lsrow {
-    width: 62%; 
-}
-} 
-@media(max-width:1080px){
-.main-w3lsrow {
-    width: 73%; 
-}
-} 
-@media(max-width:991px){
-h1 {
-    /*font-size: 8em; */
-}
-.login-form { 
-    padding: 0 2em 0 2em; 
-}
-.main-w3lsrow {
-    width: 70%;
-}
-.login-form p { 
-    margin: 1.2em 0 .5em; 
-}
-.anim { 
-    margin: 1.5em 0 0; 
-}
-.login-form.login-form-left .anim {
-    margin-top: 2.5em;
-}
-.login-form.login-form-left .policy {
-    margin-top: 2.5em;
-}
-.login-form input[type="submit"] { 
-    margin-top: 1em;
-}
-.login-agileits-bottom {
-    margin-top: 1em; 
-}
-.login-form h2, .login-form h3 {
-    font-size: 1.8em; 
-}
-}
-@media(max-width:800px){
-.main-w3lsrow {
-    width: 82%;
-}
-h1 {
-    /*font-size: 7em;*/
-}
-}
-@media(max-width:667px){
-.main-w3lsrow {
-    width: 92%;
-}
-.login-form input[type="text"], .login-form input[type="password"] { 
-    padding: .5em; 
-}
-}
-@media(max-width:600px){
-.main-w3lsrow {
-    width: inherit;
-}
-.login-form, .login-form.agileits-right {
-    width: 50%;
-    float: none;
-    margin: 0 auto;
-}
-.login-form.agileits-right { 
-    margin: 1.5em auto 0;
-}
-.login-agileits-bottom {
-    margin-top: 0.8em;
-}
-.login-form input[type="submit"] {
-    margin-top: 0.8em;
-}
-} 
-@media(max-width:490px){
-h1 {
-    font-size: 7em;
-}
-h2 {
-    font-size: 1.8em;
-}
-h3 {
-    font-size: 1.2em;
-}
-.login-form, .login-form.agileits-right {
-    width: 60%; 
-}
-.copyright p { 
-    padding: 0 1em;
-}
-}
-@media(max-width:384px){
-.main {
-    padding: 1.5em 0 0; 
-}
-.login-form h2, .login-form h3 { 
-    margin-bottom: 1em; 
-}
-} 
-@media(max-width:320px){
-h1 {
-    font-size: 1.6em;
-}
-.login-form, .login-form.agileits-right {
-    width: 72%;
-    padding: 0 1.5em 0 1.5em;
-}
-.login-form h2, .login-form h3 {
-    font-size: 1.4em;
-}
-.login-form p {
-    font-size: 0.9em; 
-}
-.login-form.login-form-left .anim {
-    margin-top: 1.5em;
-}
-.login-form.login-form-left .policy {
-    margin-top: 1.5em;
-}
-.login-form input[type="submit"] {
-    font-size: 0.6em;
-}
-.login-agileits-bottom h6 {
-    font-size: 0.9em; 
-}
-.login-agileits-bottom {
-    margin-top: 1.0em;
-}
-.copyright {
-    margin: 2em 0 1em; 
-}
-.copyright p {
-    font-size: 0.9em; 
-}
-}
-/*-- //responsive-design --*/
