@@ -310,6 +310,7 @@ body {
   width: 70px;
   height: 100px;
   margin-left: 10px;
+  float: right;
   border:1px solid #94D3F7;-webkit-box-shadow: #CCCCCC 0px 1px 0px inset;-moz-box-shadow: #CCCCCC 0px 1px 0px inset; box-shadow: #CCCCCC 0px 1px 0px inset; -webkit-border-radius: 15px; -moz-border-radius: 15px;border-radius: 15px;font-size:15px;font-family:arial, helvetica, sans-serif; padding: 10px 10px 10px 10px; text-decoration:none; display:inline-block;font-weight:bold; color: #000000;
   background-color: #FFFFFF; background-image: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#94D3F7));
   background-image: -webkit-linear-gradient(top, #FFFFFF, #94D3F7);
